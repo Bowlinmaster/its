@@ -35,14 +35,24 @@
             </div>
         </div>
 		-->
-		<img src="http://a1.mzstatic.com/us/r1000/089/Features/v4/98/48/1a/98481a3a-89c4-e7c8-57b4-46d09ee5b5fb/dj.lwrvvvan.100x100-75.jpg"><br>
+		<!--<img src="http://a1.mzstatic.com/us/r1000/089/Features/v4/98/48/1a/98481a3a-89c4-e7c8-57b4-46d09ee5b5fb/dj.lwrvvvan.100x100-75.jpg"><br>
         <img src="http://a2.mzstatic.com/us/r2000/003/Music/v4/7f/bc/f6/7fbcf628-f02e-8b16-d2f0-746b1dd6dad5/13UMGIM59468.100x100-75.jpg"><br>
         <img src="http://a3.mzstatic.com/us/r1000/068/Music/v4/07/6c/84/076c846a-1285-9ab5-10d8-acc7ac291f82/886443654297.100x100-75.jpg"><br>
-        <img src="http://a4.mzstatic.com/us/r2000/003/Music2/v4/a7/de/f0/a7def0b8-80f6-6ac7-d207-ac73c0200082/13UAAIM07353.100x100-75.jpg"><br>
+        <img src="http://a4.mzstatic.com/us/r2000/003/Music2/v4/a7/de/f0/a7def0b8-80f6-6ac7-d207-ac73c0200082/13UAAIM07353.100x100-75.jpg"><br>-->
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+		// Wait for device API libraries to load
+		//
+		document.addEventListener("deviceready", onDeviceReady, false);
+
+		// device APIs are available
+		//
+		function onDeviceReady() {
+			var db = window.openDatabase("test", "1.0", "Test DB", 1000000);
+		}
+
         </script>
     </body>
 </html>
